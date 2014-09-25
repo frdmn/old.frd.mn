@@ -10,5 +10,6 @@ bower_components
 assets/fonts
 assets/svg
 assets/css/style.css
+assets/css/style.min.css
 assets/js/build.js
 assets/js/modernizr.js
