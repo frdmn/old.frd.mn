@@ -1,13 +1,5 @@
 /* @group Animations */
 
-@font-face {
-	font-family: 'Pictos';
-	src: url('../fonts/pictos-web.eot');
-	src: local('☺'), url('../fonts/pictos-web.woff') format('woff'), url('../fonts/pictos-web.ttf') format('truetype'), url('../fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 @-webkit-keyframes bg {
 	from {
 		opacity: 0.2;
@@ -301,52 +293,6 @@ div#info:hover {
 
 #info:hover a {
 	margin: 0 10px;
-}
-
-#info a:before {
-	font-family: "Pictos", sans-serif;
-	font-size: 21px;
-	vertical-align: -1px;
-}
-
-#info a[href*="mailto"]:before {
-	content: "M";
-}
-
-#info a[href="http://blog.frd.mn"]:before {
-	content: "U";
-}
-
-#info a[href="http://twitter.com/frdmn"]:before {
-	content: "B";
-}
-
-#info a[href="http://reddit.com/u/frdmn"]:before {
-	content: "{";
-}
-
-#info a[href="http://yeahwh.at"]:before {
-	content: "C";
-}
-
-#info a[href="http://last.fm/user/frdmn"]:before {
-	content: "m";
-}
-
-#info a[href="http://github.com/frdmn"]:before {
-	content: ";";
-}
-
-#info a[href="http://git.frd.mn"]:before {
-	content: "b";
-}
-
-#info a[href="bitcoin:1PurH8uQbh4fXrCQqhKCe4JESUSQAk6bAq"]:before {
-	content: "%";
-}
-
-#info a[href="https://keybase.io/frdmn"]:before {
-	content: "K";
 }
 
 /* @end */
