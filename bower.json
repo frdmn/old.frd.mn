@@ -17,7 +17,8 @@
   "dependencies": {
     "jquery": "1.11",
     "modernizr": "~2.8.3",
-    "loglevel": "~0.6.0"
+    "loglevel": "~0.6.0",
+    "signet": "~0.4.7"
   },
   "resolutions": {
     "jquery": "1.11"
