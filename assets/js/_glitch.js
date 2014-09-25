@@ -4,8 +4,8 @@ $(document).ready(function(){
     $('#freakshow > img').hide();
     },51700);
 
-    if ($.browser.msie) {
-        $('#freakshow > img').hide();
-        $('#frdmn img:last-child').hide();
-    }
+    // if ($.browser.msie) {
+    //     $('#freakshow > img').hide();
+    //     $('#frdmn img:last-child').hide();
+    // }
 });
