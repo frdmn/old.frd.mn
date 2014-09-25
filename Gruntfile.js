@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                 src: [
                     '<%= dirs.bower %>/jquery/dist/jquery.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
-                    // '<%= dirs.bower %>/signet/signet.js',
+                    // '<%= dirs.bower %>/signet/signet.js', @TODO
                     '<%= dirs.bower %>/jquery-ui/ui/jquery-ui.js',
                     '<%= dirs.bower %>/jquery-ui/ui/minified/jquery-ui.min.js',
                     '<%= dirs.bower %>/video.js/dist/video-js/video.js',
