@@ -1,11 +1,12 @@
-var amountGlitches = 18,
-    amountKonamiGlitches = 11;
+$(document).ready(function(){
+    var amountGlitches = 18,
+        amountKonamiGlitches = 11;
 
-var randomGlitch = (Math.random() * amountGlitches | 0) + 1,
-    randomKonamiGlitch = (Math.random() * amountKonamiGlitches | 0) + 1;
+    var randomGlitch = (Math.random() * amountGlitches | 0) + 1,
+        randomKonamiGlitch = (Math.random() * amountKonamiGlitches | 0) + 1;
 
-$(function() {
     var BV = new $.BigVideo({useFlashForFirefox:false});
+    
 	BV.init();
     BV.show(
         [
