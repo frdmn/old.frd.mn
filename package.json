@@ -1,6 +1,6 @@
 {
   "name": "frd.mn",
-  "version": "1.0",
+  "version": "1.0.0",
   "main": "index.html",
   "description": "Personal website of Jonas Friedmann",
   "devDependencies": {
