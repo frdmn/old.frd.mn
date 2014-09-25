@@ -121,16 +121,27 @@ module.exports = function(grunt) {
             }
         },
 
-        // // Copy
-        // copy: {
-        //   main: {
-        //     files: [
-        //       {expand: true, cwd: '<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**'], dest: '<%= dirs.fonts %>'},
-        //       {expand: true, cwd: '<%= dirs.bower %>/chosen/', src: ['chosen-sprite*'], dest: '<%= dirs.css %>'},
-        //       {expand: true, cwd: '<%= dirs.bower %>/svg-spinners/', src: ['loading-*.svg'], dest: '<%= dirs.svg %>'}
-        //     ]
-        //   }
-        // },
+        // CSSmin
+        cssmin: {
+            combine: {
+                files: {
+                    '<%= dirs.css %>/style.min.css': [
+                        '<%= dirs.css %>/style.css',
+                        '<%= dirs.bower %>/BigVideo.js/css/bigvideo.css',
+                        '<%= dirs.bower %>/fontawesome/css/font-awesome.css'
+                    ]
+                }
+            }
+        },
+
+        // Copy
+        copy: {
+          main: {
+            files: [
+              {expand: true, cwd: '<%= dirs.bower %>/fontawesome/fonts/', src: ['**'], dest: '<%= dirs.fonts %>'}
+            ]
+          }
+        },
 
         // Watch
         watch: {
@@ -139,7 +150,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['<%= dirs.css %>/*.scss'],
-                tasks: ['sass:dev', 'autoprefixer']
+                tasks: ['sass:dev', 'autoprefixer', 'cssmin']
             },
             images: {
                 files: ['<%= dirs.images %>/*.{png,jpg,gif}'],
@@ -159,6 +170,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['sass:build', 'autoprefixer', 'concat', 'uglify', 'imagemin']);
+    grunt.registerTask('default', ['sass:build', 'copy' , 'cssmin', 'autoprefixer', 'concat', 'uglify', 'imagemin']);
     grunt.registerTask('dev', ['connect', 'watch']);
 };
