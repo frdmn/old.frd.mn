@@ -3,52 +3,52 @@
     {
       "description": "Mail",
       "url": "mailto:&#106;&#064;&#102;&#114;&#100;&#046;&#109;&#110;",
-      "fa-icon": ""
+      "fa-icon": "fa-envelope"
     },
     {
       "description": "Twitter",
       "url": "http://twitter.com/frdmn",
-      "fa-icon": ""
+      "fa-icon": "fa-twitter"
     },
     {
       "description": "Reddit",
       "url": "http://reddit.com/u/frdmn",
-      "fa-icon": ""
+      "fa-icon": "fa-reddit"
     },
     {
       "description": "last.fm",
       "url": "http://last.fm/user/frdmn",
-      "fa-icon": ""
+      "fa-icon": "fa-lastfm"
     },
     {
       "description": "GitHub",
       "url": "http://github.com/frdmn",
-      "fa-icon": ""
+      "fa-icon": "fa-github"
     },
     {
       "description": "GitLab",
       "url": "http://git.frd.mn",
-      "fa-icon": ""
+      "fa-icon": "fa-git"
     },
     {
       "description": "YEAHWHAT?!",
       "url": "http://yeahwh.at",
-      "fa-icon": ""
+      "fa-icon": "fa-gamepad"
     },
     {
       "description": "Blog",
       "url": "http://blog.frd.mn",
-      "fa-icon": ""
+      "fa-icon": "fa-pencil"
     },
     {
       "description": "BTC",
       "url": "bitcoin:1PurH8uQbh4fXrCQqhKCe4JESUSQAk6bAq",
-      "fa-icon": ""
+      "fa-icon": "fa-btc"
     },
     {
       "description": "keybase.io",
       "url": "https://keybase.io/frdmn",
-      "fa-icon": ""
+      "fa-icon": "fa-key"
     }
   ]
 }
