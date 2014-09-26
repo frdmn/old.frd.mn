@@ -1,6 +1,9 @@
 // Variables
 $icon-font-path: "../fonts/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
 
 // Imports
+@import "../../bower_components/fontawesome/scss/font-awesome";
+
 @import 'main';
 @import 'old';
