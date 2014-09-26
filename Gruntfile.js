@@ -69,6 +69,7 @@ module.exports = function(grunt) {
                     '<%= dirs.bower %>/video.js/dist/video-js/video.js',
                     '<%= dirs.bower %>/BigVideo.js/lib/bigvideo.js',
                     '<%= dirs.bower %>/cheet.js/cheet.js',
+                    '<%= dirs.bower %>/handlebars/handlebars.js',
                     '<%= dirs.js %>/*.js',
                     '!<%= dirs.js %>/modernizr.js',
                     '!<%= dirs.js %>/build.js'

@@ -21,7 +21,8 @@
     "signet": "~0.4.7",
     "BigVideo.js": "~1.1.3",
     "fontawesome": "~4.2.0",
-    "cheet.js": "~0.3.2"
+    "cheet.js": "~0.3.2",
+    "handlebars": "~1.3.0"
   },
   "resolutions": {
     "jquery": "1.11"
