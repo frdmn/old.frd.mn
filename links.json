@@ -1,0 +1,54 @@
+{
+  "links":[
+    {
+      "description": "Mail",
+      "url": "mailto:&#106;&#064;&#102;&#114;&#100;&#046;&#109;&#110;",
+      "fa-icon": ""
+    },
+    {
+      "description": "Twitter",
+      "url": "http://twitter.com/frdmn",
+      "fa-icon": ""
+    },
+    {
+      "description": "Reddit",
+      "url": "http://reddit.com/u/frdmn",
+      "fa-icon": ""
+    },
+    {
+      "description": "last.fm",
+      "url": "http://last.fm/user/frdmn",
+      "fa-icon": ""
+    },
+    {
+      "description": "GitHub",
+      "url": "http://github.com/frdmn",
+      "fa-icon": ""
+    },
+    {
+      "description": "GitLab",
+      "url": "http://git.frd.mn",
+      "fa-icon": ""
+    },
+    {
+      "description": "YEAHWHAT?!",
+      "url": "http://yeahwh.at",
+      "fa-icon": ""
+    },
+    {
+      "description": "Blog",
+      "url": "http://blog.frd.mn",
+      "fa-icon": ""
+    },
+    {
+      "description": "BTC",
+      "url": "bitcoin:1PurH8uQbh4fXrCQqhKCe4JESUSQAk6bAq",
+      "fa-icon": ""
+    },
+    {
+      "description": "keybase.io",
+      "url": "https://keybase.io/frdmn",
+      "fa-icon": ""
+    }
+  ]
+}
