@@ -1,5 +1,207 @@
-/* General */
-
 html {
-    background: black;
+    background: #000;
+}
+
+body {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    background: #222;
+    overflow: hidden;
+}
+
+
+
+div#freakshow > img {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 150%;
+    z-index: 1111;
+}
+
+.cssanimations body {
+    background-size: cover;
+    -webkit-animation-name: bg;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+.cssanimations #freakshow > img {
+    display: none;
+}
+
+#frdmn {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -350px;
+    z-index: 8888;
+    background: url(../media/logo/frdmn.png) no-repeat left top;
+    -webkit-animation-name: flicker;
+    /*-webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;*/
+}
+
+#frdmn > img:nth-of-type(1) {
+    position: absolute;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+
+#frdmn > img:nth-of-type(2) {
+    position: absolute;
+    -webkit-animation-name: highlight;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+.no-cssanimations #frdmn {
+    background: none;
+}
+
+.no-cssanimations #frdmn > img:nth-of-type(2) {
+    display: none;
+}
+
+
+#status {
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: 50px;
+    z-index: 9999;
+    text-align: center;
+}
+
+#status p {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: transparent;
+    -webkit-animation-name: status;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+.no-cssanimations #status p {
+    color: rgba(255,255,255,0);
+    text-shadow: 0px 0px 2px #fff;
+    opacity: .7;
+}
+
+#status p:before {
+    position: relative;
+    bottom: -45px;
+    right: -18px;
+    content: "“";
+    font-size: 120px;
+    line-height: 30px;
+    opacity: .5;
+}
+
+#status p:after {
+    position: relative;
+    bottom: -20px;
+    left: -10px;
+    content: "”";
+    font-size: 62px;
+    line-height: 30px;
+    opacity: .5;
+}
+
+#status p a {
+    color: #fff;
+    opacity: .6;
+    font-size: 21px;
+}
+
+#tv {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:  url(../media/tools/gloss.png) no-repeat center top,  url(../media/tools/tvlines.png) repeat left top;
+    z-index: 9998;
+}
+
+/* @group Profillinks */
+
+#info {
+    position: absolute;
+    width: 30px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    padding: 10px 5px;
+    background: #000;
+    overflow: hidden;
+}
+
+#info span {
+    white-space: nowrap;
+}
+
+#info:before {
+    font-family: "Pictos";
+    content: ".";
+    color: #fff;
+    font-size: 21px;
+    position: absolute;
+    left: 10px;
+}
+
+div#info:hover {
+    width: 870px;
+    background: rgba(0,0,0,.4);
+    -webkit-transition: width .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+#info:hover::before {
+    content: "";
+}
+
+#info a {
+    font-family: Helvetica;
+    font-size: 13px;
+    margin: 0 50px;
+    color: #ccc;
+    text-decoration: none;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+#info a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 3px #fff;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+#info:hover a {
+    margin: 0 10px;
+}
+
+/* @end */
+
+.clear {
+    clear: both;
 }

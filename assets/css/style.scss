@@ -3,8 +3,7 @@ $icon-font-path: "../fonts/";
 $fa-font-path: "/bower_components/fontawesome/fonts";
 
 // Imports
-@import "../../bower_components/fontawesome/scss/font-awesome";
-
 @import 'main';
 @import 'animations';
-@import 'old';
+
+@import "../../bower_components/fontawesome/scss/font-awesome";
