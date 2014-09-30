@@ -73,7 +73,6 @@ div#freakshow > img {
     display: none;
 }
 
-
 #status {
     position: absolute;
     width: 700px;
@@ -157,8 +156,7 @@ div#freakshow > img {
 }
 
 #info:before {
-    font-family: "Pictos";
-    content: ".";
+    content: "•";
     color: #fff;
     font-size: 21px;
     position: absolute;
