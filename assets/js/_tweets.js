@@ -11,7 +11,7 @@ $(document).ready(function(){
         return $(this);
     };
 
-    $.getJSON("https://cors-anywhere.herokuapp.com/http://frdmns-oauth-proxy.herokuapp.com/1.1/statuses/user_timeline.json?screen_name=frdmn", function(data) {
+    $.getJSON("https://cors-anywhere.herokuapp.com/http://frdmns-oauth-proxy.herokuapp.com/1.1/statuses/user_timeline.json?screen_name=frdmn&exclude_replies=true", function(data) {
         var dat = 0;
              $("#status p").html(data[dat].text).tweetify();
              setInterval(function(){
