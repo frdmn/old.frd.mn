@@ -1,51 +1,52 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<meta name="signet:authors" content="Jonas Friedmann">
-	<meta name="signet:links" content="http://github.com/frdmn, http://twitter.com/frdmn, http://frd.mn, http://yeahwh.at, https://keybase.io/frdmn">
+  <meta charset="UTF-8">
+  <meta name="signet:authors" content="Jonas Friedmann">
+  <meta name="signet:links" content="http://github.com/frdmn, http://twitter.com/frdmn, http://frd.mn, http://yeahwh.at, https://keybase.io/frdmn">
 
-	<title>frdmn</title>
+  <title>frdmn</title>
 
-    <!-- Include CSS -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
+  <!-- Include CSS -->
+  <link href="assets/css/style.min.css" rel="stylesheet">
 
-    <!-- Include modernizr -->
-    <script src="assets/js/modernizr.js"></script>
+  <!-- Include modernizr -->
+  <script src="assets/js/modernizr.js"></script>
 
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-42536191-1', 'frd.mn');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-46292455-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
-	<i class="fa fa-angellist">aaa</i>
-	<div id="freakshow">
-		<div id="frdmn">
-			<img src="assets/media/logo/frdmn-blurry.png" />
-			<img src="assets/media/logo/frdmn-glitchy.png" />
-		</div>
-		<div id="status">
-			<p>No JavaScript enabled :(</p>
-		</div>
-		<div id="tv"></div>
+  <i class="fa fa-angellist">aaa</i>
+  <div id="freakshow">
+    <div id="frdmn">
+      <img src="assets/media/logo/frdmn-blurry.png" />
+      <img src="assets/media/logo/frdmn-glitchy.png" />
+    </div>
+    <div id="status">
+      <p>No JavaScript enabled :(</p>
+    </div>
+    <div id="tv"></div>
 
-		<div id="info"><!-- Handlebars.js placeholder --></div>
+    <div id="info"><!-- Handlebars.js placeholder --></div>
 
-		<script id="info-template" type="text/x-handlebars-template">
-			<span>
-				{{#links}}
-					<a href="{{url}}" target="_blank"><i class="fa {{fa-icon}}"></i> {{description}}</a>
-				{{/links}}
-			</span>
-		</script>
-	</div>
+    <script id="info-template" type="text/x-handlebars-template">
+      <span>
+        {{#links}}
+          <a href="{{url}}" target="_blank"><i class="fa {{fa-icon}}"></i> {{description}}</a>
+        {{/links}}
+      </span>
+    </script>
+  </div>
 
     <!-- Include JavaScript -->
     <script src="assets/js/build.js"></script>
