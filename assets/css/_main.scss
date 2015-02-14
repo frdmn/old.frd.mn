@@ -20,16 +20,18 @@ div#freakshow > img {
     z-index: 1111;
 }
 
-.cssanimations body {
-    background-size: cover;
-    -webkit-animation-name: bg;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-}
+.cssanimations {
+    body {
+        background-size: cover;
+        animation-name: bg;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
 
-.cssanimations #freakshow > img {
-    display: none;
+    #freakshow > img {
+        display: none;
+    }
 }
 
 #frdmn {
@@ -42,35 +44,39 @@ div#freakshow > img {
     margin-top: -350px;
     z-index: 8888;
     background: url(../media/logo/frdmn.png) no-repeat left top;
-    -webkit-animation-name: flicker;
-    /*-webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;*/
+    animation-name: flicker;
+
+    > img:nth-of-type(1) {
+        position: absolute;
+        animation-name: fade;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    > img:nth-of-type(2) {
+        position: absolute;
+        animation-name: highlight;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
 }
 
-#frdmn > img:nth-of-type(1) {
-    position: absolute;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-}
+.no-cssanimations {
+    #frdmn {
+        background: none;
 
+        > img:nth-of-type(2) {
+            display: none;
+        }
+    }
 
-#frdmn > img:nth-of-type(2) {
-    position: absolute;
-    -webkit-animation-name: highlight;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-}
-
-.no-cssanimations #frdmn {
-    background: none;
-}
-
-.no-cssanimations #frdmn > img:nth-of-type(2) {
-    display: none;
+     #status p {
+        color: rgba(255,255,255,0);
+        text-shadow: 0px 0px 2px #fff;
+        opacity: .7;
+    }
 }
 
 #status {
@@ -83,49 +89,43 @@ div#freakshow > img {
     margin-top: 50px;
     z-index: 9999;
     text-align: center;
-}
 
-#status p {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: transparent;
-    -webkit-animation-name: status;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-}
+    p {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        color: transparent;
+        animation-name: status;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
 
-.no-cssanimations #status p {
-    color: rgba(255,255,255,0);
-    text-shadow: 0px 0px 2px #fff;
-    opacity: .7;
-}
+        a {
+            color: #fff;
+            opacity: .6;
+            font-size: 21px;
+        }
 
-#status p:before {
-    position: relative;
-    bottom: -45px;
-    right: -18px;
-    content: "“";
-    font-size: 120px;
-    line-height: 30px;
-    opacity: .5;
-}
+        &:before {
+            position: relative;
+            bottom: -45px;
+            right: -18px;
+            content: "“";
+            font-size: 120px;
+            line-height: 30px;
+            opacity: .5;
+        }
 
-#status p:after {
-    position: relative;
-    bottom: -20px;
-    left: -10px;
-    content: "”";
-    font-size: 62px;
-    line-height: 30px;
-    opacity: .5;
-}
-
-#status p a {
-    color: #fff;
-    opacity: .6;
-    font-size: 21px;
+        &:after {
+            position: relative;
+            bottom: -20px;
+            left: -10px;
+            content: "”";
+            font-size: 62px;
+            line-height: 30px;
+            opacity: .5;
+        }
+    }
 }
 
 #tv {
@@ -142,60 +142,54 @@ div#freakshow > img {
 
 #info {
     position: absolute;
-    width: 30px;
+    max-width: 30px;
     right: 20px;
     bottom: 20px;
     z-index: 9999;
     padding: 10px 5px;
     background: #000;
     overflow: hidden;
-}
 
-#info span {
-    white-space: nowrap;
-}
+    a {
+        font-family: Helvetica;
+        font-size: 13px;
+        margin: 0 50px;
+        color: #ccc;
+        text-decoration: none;
+        transition: color .3s ease-in-out;
 
-#info:before {
-    content: "•";
-    color: #fff;
-    font-size: 21px;
-    position: absolute;
-    left: 10px;
-}
+        &:hover {
+            color: #fff;
+            text-shadow: 0px 0px 3px #fff;
+            transition: color .3s ease-in-out;
+        }
+    }
 
-div#info:hover {
-    width: auto;
-    background: rgba(0,0,0,.4);
-    -webkit-transition: width .3s ease-in-out;
-    -moz-transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-}
+    span {
+        white-space: nowrap;
+    }
 
-#info:hover::before {
-    content: "";
-}
+    &:before {
+        content: "•";
+        color: #fff;
+        font-size: 21px;
+        position: absolute;
+        left: 10px;
+    }
 
-#info a {
-    font-family: Helvetica;
-    font-size: 13px;
-    margin: 0 50px;
-    color: #ccc;
-    text-decoration: none;
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
-}
+    &:hover {
+        max-width: 100%;
+        background: rgba(0,0,0,.4);
+        transition: max-width 1.3s ease-in-out;
 
-#info a:hover {
-    color: #fff;
-    text-shadow: 0px 0px 3px #fff;
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
-}
+        a {
+            margin: 0 10px;
+        }
 
-#info:hover a {
-    margin: 0 10px;
+        &::before {
+            content: "";
+        }
+    }
 }
 
 /* @end */
