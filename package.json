@@ -1,6 +1,10 @@
 {
   "name": "frd.mn",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frdmn/frd.mn.git"
+  },
   "main": "index.html",
   "description": "Personal website of Jonas Friedmann",
   "devDependencies": {
@@ -16,7 +20,7 @@
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-htmlhint": "~0.4.0",
-    "grunt-notify": "~0.3.0",
+    "grunt-notify": "^0.4.1",
     "load-grunt-tasks": "~0.3.0"
   }
 }
