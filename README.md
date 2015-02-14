@@ -1,7 +1,7 @@
 frd.mn
 ======
 
-Personal website of Jonas Friedmann, which you can find here: http://frd.mn
+Personal website of Jonas Friedmann, which can be found here: http://frd.mn
 
 The project is a work in progress!
 
