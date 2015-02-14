@@ -153,7 +153,7 @@ div#freakshow > img {
     a {
         font-family: Helvetica;
         font-size: 13px;
-        margin: 0 50px;
+        margin: 0 10px;
         color: #ccc;
         text-decoration: none;
         transition: color .3s ease-in-out;
@@ -169,14 +169,6 @@ div#freakshow > img {
         white-space: nowrap;
     }
 
-    &:before {
-        content: "•";
-        color: #fff;
-        font-size: 21px;
-        position: absolute;
-        left: 10px;
-    }
-
     &:hover {
         max-width: 100%;
         background: rgba(0,0,0,.4);
@@ -184,10 +176,6 @@ div#freakshow > img {
 
         a {
             margin: 0 10px;
-        }
-
-        &::before {
-            content: "";
         }
     }
 }
