@@ -1,6 +1,8 @@
 old.frd.mn
 ======
 
+![](http://up.frd.mn/M4VE4.png)
+
 Superseded personal website of Jonas Friedmann, which can be found here: http://old.frd.mn
 
 ### Requirements
