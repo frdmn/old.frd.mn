@@ -1,9 +1,7 @@
-frd.mn
+old.frd.mn
 ======
 
-Personal website of Jonas Friedmann, which can be found here: http://frd.mn
-
-The project is a work in progress!
+Superseded personal website of Jonas Friedmann, which can be found here: http://old.frd.mn
 
 ### Requirements
 
